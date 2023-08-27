@@ -1,0 +1,16 @@
+#include<stdio.h>
+ int main()
+{
+    int numbers[6]={10,10,11,11,12,13},i,j;
+    for(i=0;i<6;i++)
+    {
+        for(j=i;j<5;j++)
+        {
+            if(numbers[i]==numbers[j+1])
+            {
+                printf("Number %d has duplicate values\n",numbers[i]);
+            }
+        }
+    }
+    return 0;
+}
